@@ -1,4 +1,4 @@
-## To find where a particular Qt dlls are in the PATH
+## To find where Qt dlls are in the PATH
 
 ```
 $env:path -split ';' | Get-ChildItem | Format-Table Fullname | findstr Qt.*.dll
