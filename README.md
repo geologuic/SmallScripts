@@ -1,7 +1,16 @@
 # SmallScripts
+### Author: Guillaume Caumon.
 
+A few useful scripts and experiments. 
 
-Some useful scripts
+License: [https://opensource.org/licenses/MIT](MIT). 
 
-Rather than searching all the time for solutions, here is a list of scripts and tips to gain time on Windows
+ . RGBToPalette.ipnb: A Python script to transform LIDAR points with RGB values into texture coordinates (+ writing the palette as Gocad color map file)
+ 
+ . PowerShellScripts.md: Some useful PowerShell commands to gain time on Windows
+ 
+ . BinaryLoader.ipnb: A small Python script to load gridded data from binary files
+ 
+ . Binomial.ipnb: A small Python script to generate plots of the binomial distribution 
+
 
