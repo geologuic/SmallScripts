@@ -1,3 +1,19 @@
+## To generate type information and doc of pybind11 Python functions in virtual environment (to be read by PyCharm for completion, tooltips, checks and other static analyzes)
+
+Before all, need to install pybind11-stubgen in virtual environment:
+```
+.venv\Scripts\activate
+uv pip install pybind11-stubgen
+```
+
+After that, install / upgrading the wheel (here: ring_point_process), and generate the pyi information: 
+```
+uv pip install ring_pointprocess-5.6.2-cp312-cp312-win_amd64.whl
+pybind11-stubgen.exe -o .\.venv\Lib\site-packages\. ring_pointprocess.ring_pointprocess_py_spp    
+```
+The last argument should be the name as the .pyd file (without version info) in the site-packages directory.
+
+
 ## To find where Qt dlls are in the PATH
 
 ```
