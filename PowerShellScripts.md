@@ -1,12 +1,12 @@
-## To generate type information and doc of pybind11 Python functions in virtual environment (to be read by PyCharm for completion, tooltips, checks and other static analyzes)
+## To generate type information and doc of pybind11 Python functions
 
-Before all, need to install pybind11-stubgen in virtual environment:
+IDEs such as Pycharm do a lot of static analyses (completion, tooltips, checks...), but may struggle for custom packages generated with pybind11 installed in virtual environments. Good news: this can be fixed easily! Before all, need to install pybind11-stubgen in your virtual environment:
 ```
 .venv\Scripts\activate
 uv pip install pybind11-stubgen
 ```
 
-After that, install / upgrading the wheel (here: ring_point_process), and generate the pyi information: 
+After that, install / upgrade the wheel (example here: ring_point_process), and generate the pyi information: 
 ```
 uv pip install ring_pointprocess-5.6.2-cp312-cp312-win_amd64.whl
 pybind11-stubgen.exe -o .\.venv\Lib\site-packages\. ring_pointprocess.ring_pointprocess_py_spp    
